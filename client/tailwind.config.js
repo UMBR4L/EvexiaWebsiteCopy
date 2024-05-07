@@ -5,13 +5,58 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
+        primary: "#fbf4ec",
+        secondary: "#2d7a9c",
+        tree: "#6fb793",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        navBarSecondary: "rgba(45, 122, 156, 0.17)",
+        dimPrimary: "rgba(251, 244, 236, 0.5)",
+        gr: "#515151",
+        malibu: "#72c7ea",
+        lightOrange: "#e3a782",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        inter: ["Inter", "sans-setif"],
+        merri: ["Merriweather", "sans-serif"],
+      },
+      animation: {
+        "slide-left": "slide-left 0.5s ease-in-out",
+        "slide-up": "slide-up 0.7s ease-in-out",
+        "slide-right": "slide-right 0.5s ease-in-out",
+      },
+      keyframes: {
+        "slide-left": {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: 1,
+          },
+        },
+        "slide-up": {
+          "0%": {
+            transform: "translateY(0%)",
+            opacity: 1,
+          },
+          "100%": {
+            transform: "translateY(-100%)",
+            opacity: 1,
+          },
+        },
+        "slide-right": {
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: 1,
+          },
+        },
       },
     },
     screens: {
@@ -23,5 +68,5 @@ export default {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
