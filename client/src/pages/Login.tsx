@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 import logo_animated from "../assets/logos/hero-animation.gif";
 import tl from "../assets/art/corner-prop-08.svg";
 import tr from "../assets/art/corner-prop-09.svg";
@@ -11,6 +12,8 @@ import styles from "../style";
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  // const { setAuthToken } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -20,9 +23,30 @@ const Login: React.FC = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Perform login logic here
+    try {
+      const response = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        localStorage.setItem("token", data.token);
+        // setAuthToken(data.token); // Update the context
+        navigate("/app/dashboard");
+      } else {
+        // Handle error
+        console.log(data.message);
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+    }
   };
 
   return (

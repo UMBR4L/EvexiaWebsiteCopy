@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
+import { GrHomeRounded } from "react-icons/gr";
+import { BsInfoCircle } from "react-icons/bs";
 
 import styles from "../style";
 import logo from "../assets/logos/Sideways.png";
@@ -48,17 +50,27 @@ const NavBar: React.FC = () => {
 
   const navLinks = (
     <ul
-      className={`flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 `}
+      className={`flex flex-col space-y-4 md:flex-row md:space-x-10 md:space-y-0 `}
     >
-      <li className={`${styles.pop_sm} hover:underline `}>
-        <Link to="/" onClick={() => setIsOpen(false)}>
-          Home
-        </Link>
+      <li className={`${styles.pop_sm} hover:underline`}>
+        <div className="md:flex md:space-x-2">
+          <div className="hidden md:flex">
+            <GrHomeRounded className="w-6 h-6" />
+          </div>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            Home
+          </Link>
+        </div>
       </li>
       <li className={`${styles.pop_sm} hover:underline`}>
-        <Link to="/about" onClick={() => setIsOpen(false)}>
-          About Us
-        </Link>
+        <div className="md:flex md:space-x-2">
+          <div className="hidden md:flex">
+            <BsInfoCircle className="w-6 h-6" />
+          </div>
+          <Link to="/about" onClick={() => setIsOpen(false)}>
+            About Us
+          </Link>
+        </div>
       </li>
       <li className={`${styles.pop_sm} hover:underline`}>
         <Link to="/resources" onClick={() => setIsOpen(false)}>
@@ -86,10 +98,10 @@ const NavBar: React.FC = () => {
             <div className="mt-4 mb-6 flex flex-row justify-between items-center">
               <img src={gifUrl} className="w-[40px]" />
 
-              {currentPath !== "/login" && (
+              {currentPath !== "/app/login" && (
                 <div className={`${styles.pop_sm} font-medium`}>
                   <Link
-                    to="/login"
+                    to="/app/login"
                     className={`bg-primary text-secondary px-5 py-2 rounded-xl  drop-shadow-sm border-4 border-navBarSecondary`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -113,16 +125,16 @@ const NavBar: React.FC = () => {
         </div>
       )}
       <div
-        className={`top-0 bg-primary ${styles.paddingX} py-7 shadow-md shadow-navBarSecondary flex justify-between items-center`}
+        className={`top-0 bg-primary ${styles.paddingX} py-7  flex justify-between items-center`}
       >
         <img className="w-[120px] md:w-[150px]" src={logo} alt="Logo" />
         <div className="hidden md:flex md:text-secondary justify-center items-center text-lg">
           {navLinks}
         </div>
         <div className="flex justify-center items-center">
-          {currentPath !== "/login" && (
+          {currentPath !== "/app/login" && (
             <Link
-              to="/login"
+              to="/app/login"
               className={`bg-secondary text-primary px-5 py-2 rounded-xl p-4 drop-shadow-lg border-4 border-dimPrimary`}
               onClick={() => setIsOpen(false)}
             >
