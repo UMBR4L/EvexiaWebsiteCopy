@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../style";
 import mountain from "../../assets/art/mountain.svg";
-import flower from "../../assets/art/Flower.svg";
+import question from "../../assets/art/question.svg";
 import { Link } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
@@ -12,7 +12,8 @@ const Hero = () => {
         <div className="flex flex-col">
           <div className="flex flex-col text-secondary relative z-10">
             <div className="text-3xl sm:text-5xl font-semibold">
-              Your mind is <span className={`${styles.merri}`}>your </span>mind
+              Who we <span className={`${styles.merri}`}>are</span> • What we
+              <span className={`${styles.merri}`}> do</span>
             </div>
             <br />
 
@@ -20,10 +21,11 @@ const Hero = () => {
               <br />
             </div>
 
-            <div className="text-base font-light md:text-lg">
-              Connecting you to your organization's mental health resources and
-              much more. <br /> Accesibility is everything, and we are here to
-              enrich that.
+            <div className="text-base flex font-light md:text-lg text-left justify-center">
+              We develop research and evidence based toolkits & resources to
+              help tackle even the most trivial of roadblocks at work, school
+              and home. <br /> Working with your organsation to make their
+              resources and our's available to you in the most optimal way.
             </div>
             <div className="hidden md:flex">
               <br />
@@ -32,22 +34,17 @@ const Hero = () => {
             <br />
             <div className="flex sm:justify-center z-10">
               <div className="flex flex-col space-y-10 md:space-x-10  md:space-y-0 md:flex-row  py-4">
-                <div className={`${styles.pop_sm} flex`}>
-                  <Link
-                    to="/app/login"
-                    className={`bg-lightOrange text-white px-10 py-3 rounded-xl drop-shadow-sm border-2 border-navBarSecondary text-sm sm:text-lg font-medium mb-0`}
+                <div className={` flex`}>
+                  <div
+                    className={`bg-transparent backdrop-blur-lg text-secondary px-10 py-3 rounded-xl drop-shadow-sm border-2 border-navBarSecondary text-sm sm:text-lg font-medium mb-0`}
                   >
-                    Check out Resources
-                  </Link>
-                </div>
-
-                <div className={`${styles.pop_sm} flex font-medium mb-0`}>
-                  <Link
-                    to="/app/login"
-                    className={`bg-tree text-white px-[54px] py-3 rounded-xl drop-shadow-sm border-2 border-navBarSecondary text-sm sm:text-lg`}
-                  >
-                    Download Button
-                  </Link>
+                    Did you know?
+                    <br /> Evexia is Greek for{" "}
+                    <span className={`${styles.merri} animate-grow`}>
+                      wellness
+                    </span>
+                    .
+                  </div>
                 </div>
 
                 {/* <div className={`${styles.pop_sm} flex font-medium mb-0`}>
@@ -61,8 +58,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0 right-8 w-[40%] overflow-hidden ss:max-w-[25%] sm:max-w-[25%] md:w-[12%] xl:max-w-[9%] z-0 rounded-br-[24%] animate-grow">
-            <img src={flower} className={`w-full h-full object`} />
+          <div className="absolute bottom-0 right-8 w-[40%] overflow-hidden ss:max-w-[25%] sm:max-w-[25%] md:w-[12%] xl:max-w-[9%] z-0 rounded-br-[24%] animate-slide-left">
+            <img src={question} className={`w-full h-full object`} />
           </div>
         </div>
       </div>
