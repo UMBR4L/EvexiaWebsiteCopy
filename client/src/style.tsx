@@ -17,9 +17,12 @@ const styles = {
   marginY: "sm:my-16 my-6",
 
   pop: "hover:scale-125 transition duration-150 ease-out",
-  pop_sm: "hover:scale-[105%] transition duration-150 ease-in-out",
+  pop_sm: "hover:scale-[105%] transition duration-200 ease-in-out",
 
   merri: "font-merri tracking-wide italic",
+
+  radio:
+    "mr-4 w-4 h-4 dark:focus:ring-blue-600 dark:focus:ring-3 dark:border-gr",
 };
 
 export const layout = {

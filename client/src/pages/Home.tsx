@@ -8,12 +8,12 @@ import Hero from "../components/Home/Hero";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col font-inter z-0 absolute  w-full bg-gradient bg-gradient-to-b from-secondary to-tree">
-      <div className="mt-[103px] md:mt-[0px] w-full">
+    <div className="flex flex-col font-inter z-0 absolute w-full bg-gradient bg-gradient-to-b from-secondary to-tree">
+      <div className="mt-[0px] md:mt-[0px] w-full">
         <Hero />
       </div>
-      <div className="flex flex-col mx-10  md:mt-0 bg-none">
-        <div className="w-full h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
+      <div className="flex flex-col mx-5 md:mx-10 md:mt-0 bg-none justify-center items-center">
+        <div className="w-[100%] lg:max-w-[1500px] h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
           <div className="md:max-w-[75%] mx-7 my-0 flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-[0px] text-primary justify-center items-center md:items-left bg- w-full">
             <div className="bg-none w-[50%] flex justify-center">
               <img
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full h-[850px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
+        <div className="w-[100%] lg:max-w-[1500px] h-[850px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
           <div className="md:max-w-[75%] mx-7 my-0 flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-[0px] text-primary justify-center items-center md:items-left bg- w-full">
             <div className="bg-none w-[100%] md:w-[50%] flex  justify-center">
               <img

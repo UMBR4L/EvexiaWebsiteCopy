@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { GrHomeRounded } from "react-icons/gr";
 import { BsInfoCircle } from "react-icons/bs";
+import { LuMail } from "react-icons/lu";
 
 import styles from "../style";
 import logo from "../assets/logos/Sideways.png";
@@ -15,26 +16,6 @@ const NavBar: React.FC = () => {
   const [gifUrl, setGifUrl] = useState<string>(logo_animated);
   const location = useLocation();
   const currentPath = location.pathname;
-
-  //   useEffect(() => {
-  //     const handleClickOutside = (event: MouseEvent) => {
-  //         if (
-  //             isOpen &&
-  //             !event
-  //                 .composedPath()
-  //                 .some((el: Element) =>
-  //                     (el as HTMLElement).classList?.contains("nav-overlay")
-  //                 )
-  //         ) {
-  //             setIsOpen(false);
-  //         }
-  //     };
-
-  //     document.addEventListener("click", handleClickOutside);
-  //     return () => {
-  //       document.removeEventListener("click", handleClickOutside);
-  //     };
-  //   }, [isOpen]);
 
   useEffect(() => {
     if (isOpen) {
@@ -72,34 +53,39 @@ const NavBar: React.FC = () => {
           </Link>
         </div>
       </li>
-      <li className={`${styles.pop_sm} hover:underline`}>
+      {/* <li className={`${styles.pop_sm} hover:underline`}>
         <Link to="/resources" onClick={() => setIsOpen(false)}>
           Resources
         </Link>
-      </li>
+      </li> */}
       <li className={`${styles.pop_sm} hover:underline`}>
-        <Link to="/contact" onClick={() => setIsOpen(false)}>
-          Contact Us
-        </Link>
+        <div className="md:flex md:space-x-2">
+          <div className="hidden md:flex">
+            <LuMail className="w-7 h-7" />
+          </div>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>
+            Contact Us
+          </Link>
+        </div>
       </li>
     </ul>
   );
 
   return (
-    <div className="font-inter fixed md:sticky w-full z-10">
+    <div className="font-inter fixed w-full z-10">
       {isVisible && (
         <div
-          className={`nav-overlay modal-overlay px-7 ${
+          className={`nav-overlay modal-overlay px-8 mt-[0px] ${
             isOpen ? "animate-slide-left" : "animate-slide-up"
-          } z-10 absolute h-screen flex flex-col right-0  bg-secondary w-[350px] rounded-tl-3xl rounded-bl-3xl md:hidden  
-           p-4 drop-shadow-lg border-l-4 border-y-4 border-dimPrimary `}
+          } z-10 absolute h-screen flex flex-col right-0  bg-dimPrimary backdrop-blur-xl w-[350px] rounded-tl-3xl rounded-bl-3xl md:hidden  
+           p-4 drop-shadow-lg border-l-4 border-y-4 border-dimPrimary`}
         >
           <div className="flex flex-col">
             <div className="mt-4 mb-6 flex flex-row justify-between items-center">
               <img src={gifUrl} className="w-[40px]" />
 
               {currentPath !== "/app/login" && (
-                <div className={`${styles.pop_sm} font-medium`}>
+                <div className={`${styles.pop_sm} font-medium mr-[-90px]`}>
                   <Link
                     to="/app/login"
                     className={`bg-primary text-secondary px-5 py-2 rounded-xl  drop-shadow-sm border-4 border-navBarSecondary`}
@@ -114,28 +100,35 @@ const NavBar: React.FC = () => {
                 className={`w-6 ${styles.pop} ease-out transition-all duration-150 self-end float-right`}
                 onClick={() => setIsOpen(!isOpen)}
               >
-                <IoCloseOutline className="w-8 h-8 text-primary z-11" />
+                <IoCloseOutline className="w-8 h-8 text-secondary z-11" />
               </button>
             </div>
 
             <div className="bg-primary w-full h-[1px] "></div>
 
-            <div className="text-primary px-2 mt-5">{navLinks}</div>
+            <div className="text-secondary text-2xl px-2 mt-5">{navLinks}</div>
           </div>
         </div>
       )}
       <div
-        className={`top-0 bg-primary ${styles.paddingX} py-7  flex justify-between items-center`}
+        className={`top-0 bg-dimPrimary backdrop-blur-xl ${styles.paddingX} py-7  flex justify-between items-center rounded-b-[20%]`}
       >
-        <img className="w-[120px] md:w-[150px]" src={logo} alt="Logo" />
-        <div className="hidden md:flex md:text-secondary justify-center items-center text-lg">
+        <Link to="/">
+          <img
+            className={`w-[120px] md:w-[150px] ${styles.pop_sm}`}
+            src={logo}
+            alt="Logo"
+          />
+        </Link>
+
+        <div className="hidden md:flex text-secondary justify-center items-center text-lg">
           {navLinks}
         </div>
         <div className="flex justify-center items-center">
           {currentPath !== "/app/login" && (
             <Link
               to="/app/login"
-              className={`bg-secondary text-primary px-5 py-2 rounded-xl p-4 drop-shadow-lg border-4 border-dimPrimary`}
+              className={`hidden xs:flex bg-secondary text-primary px-5 py-2 rounded-xl p-4 drop-shadow-lg border-4 border-dimPrimary`}
               onClick={() => setIsOpen(false)}
             >
               Login
