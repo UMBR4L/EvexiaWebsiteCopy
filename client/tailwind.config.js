@@ -11,23 +11,26 @@ export default {
         balloon: "0 0 8px rgba(0, 0, 0, 0.2)",
       },
       colors: {
-        primary: "#fbf4ec",
-        secondary: "#007095",
-        tree: "#6fb793",
+        primary: "#fbf4ec",       // Fantasy
+        secondary: "#007095",     // Navy
+        tree: "#6fb793",          // Silver Tree
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
-        navBarSecondary: "rgba(45, 122, 156, 0.17)",
-        dimPrimary: "rgba(251, 244, 236, 0.5)",
-        gr: "#515151",
-        malibu: "#72c7ea",
-        orange: "#f49400",
-        lightOrange: "#e3a782",
-        mutedBlue: "#2d7a9c",
+        navBarSecondary: "rgba(45, 122, 156, 0.17)",  // Muted Blue
+        dimPrimary: "rgba(251, 244, 236, 0.5)",       // Fantasy (dim)
+        gr: "#515151",            // Grey
+        malibu: "#72c7ea",        // Malibu
+        orange: "#f49400",        // Dark Orange
+        lightOrange: "#e3a782",   // Tumbleweed
+        mutedBlue: "#2d7a9c",     // Muted Blue
+        oliveGreen: "#9bd7b",     // Olive Green
+        pavlova: "#d5c392",       // Pavlova
+        lemonGrass: "#9b9c82",    // Lemon Grass
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        inter: ["Inter", "sans-setif"],
-        merri: ["Merriweather", "sans-serif"],
+        sfProBold: ["SF Pro Bold", "sans-serif"],       // Headers and subheaders
+        sfProRegular: ["SF Pro Regular", "sans-serif"], // Body text
+        merri: ["Merriweather Italic", "sans-serif"],   // Quotes and highlighting
       },
       animation: {
         "fade-in": "fadeIn 300ms ease-out forwards",
