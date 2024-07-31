@@ -11,26 +11,83 @@ export default {
         balloon: "0 0 8px rgba(0, 0, 0, 0.2)",
       },
       colors: {
-        primary: "#fbf4ec",       // Fantasy
-        secondary: "#007095",     // Navy
-        tree: "#6fb793",          // Silver Tree
+        grey: "#515151", // Grey
+        primary: "#fbf4ec", // Fantasy
+        secondary: "#007095", // Navy
+        tree: "#6fb793", // Silver Tree
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
-        navBarSecondary: "rgba(45, 122, 156, 0.17)",  // Muted Blue
-        dimPrimary: "rgba(251, 244, 236, 0.5)",       // Fantasy (dim)
-        gr: "#515151",            // Grey
-        malibu: "#72c7ea",        // Malibu
-        orange: "#f49400",        // Dark Orange
-        lightOrange: "#e3a782",   // Tumbleweed
-        mutedBlue: "#2d7a9c",     // Muted Blue
-        oliveGreen: "#9bd7b",     // Olive Green
-        pavlova: "#d5c392",       // Pavlova
-        lemonGrass: "#9b9c82",    // Lemon Grass
+        navBarSecondary: "rgba(45, 122, 156, 0.17)", // Muted Blue
+        dimPrimary: "rgba(251, 244, 236, 0.5)", // Fantasy (dim)
+        malibu: "#72c7ea", // Malibu
+        darkOrange: "#f49400", // Dark Orange
+        tumbleweed: "#e3a782", // Tumbleweed
+        mutedBlue: "#2d7a9c", // Muted Blue
+        oliveGreen: "#9bd7b", // Olive Green
+        pureBlack: "#000000", // Pure Black
+        pavlova: "#d5c392", // Pavlova
+        lemonGrass: "#9b9c82", // Lemon Grass
+        // Updating the colors with new design system values
+        neutralColors: {    // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+          50: "#F9FAFB",
+          100: "#F3F4F6",
+          200: "#E5E7EB",
+          300: "#D1D5DB",
+          400: "#9CA3AF",
+          500: "#6B7280",
+          600: "#4B5563",
+          700: "#374151",
+          800: "#1F2937",
+          900: "#111827",
+        },
+        primaryColors: {    // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+          100: "#FFEDCC",
+          300: "#FFB655",
+          500: "#FF8D00",
+          700: "#AA4B00",
+          900: "#331600",
+        },
+        secondaryColors: {   // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+          100: "#CCD3E7",
+          300: "#8BA4E4",
+          500: "#104785",
+          700: "#01378F",
+          900: "#00132C",
+        },
+        successColors: {    // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+          100: "#CBEBBA",
+          300: "#9FF655",
+          500: "#17D1A9",
+          700: "#2A714F",
+          900: "#153928",
+        },
+        warningColors: {    // for warning or on-hold states.
+          100: "#FCE480",
+          300: "#F59C60",
+          500: "#F6AE11",
+          700: "#A47408",
+          900: "#523A06",
+        },
+        errorColors: {      // Generally used across error states
+          100: "#F9DBD8",
+          300: "#F97722",
+          500: "#E03C4C",
+          700: "#8B424E",
+          900: "#761313",
+        },
+        shadesColors: {     // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+          0: "#FFFFFF",
+          100: "#000000",
+        },
       },
-      fontFamily: {
-        sfProBold: ["SF Pro Bold", "sans-serif"],       // Headers and subheaders
-        sfProRegular: ["SF Pro Regular", "sans-serif"], // Body text
-        merri: ["Merriweather Italic", "sans-serif"],   // Quotes and highlighting
+      fontFamily: {   // not sure if this is accurate as I cant find the typography sheet
+        H1: ["Inter Bold", "sans-serif"], // H1
+        H2: ["Inter Bold", "sans-serif"], // H2
+        body1: ["Inter Regular", "sans-serif"], // Body 1
+        subheader: ["Inter Semi Bold", "sans-serif"], // Subheaders and selected buttons
+        sfProBold: ["SF Pro Bold", "sans-serif"], // Existing headers and subheaders
+        sfProRegular: ["SF Pro Regular", "sans-serif"], // Existing body text
+        merri: ["Merriweather Italic", "sans-serif"], // Existing quotes and highlighting
       },
       animation: {
         "fade-in": "fadeIn 300ms ease-out forwards",

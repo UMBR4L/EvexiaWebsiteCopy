@@ -21,6 +21,7 @@ interface AuthProviderProps {
   children: ReactNode;
 }
 
+// Component that returns whatever it is wrapping
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<string>(""); // Replace 'any' with the type of your user
   const [loading, setLoading] = useState(true);
@@ -53,7 +54,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     }
   };
 
-  const contextValue = { user, loading, login };
+  const contextValue = { user, loading, login };  // this is what is being wrappedc
 
   return (
     <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>

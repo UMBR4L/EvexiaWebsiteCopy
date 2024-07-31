@@ -9,6 +9,7 @@ import { LuMail } from "react-icons/lu";
 import styles from "../style";
 import logo from "../assets/logos/Sideways.png";
 import logo_animated from "../assets/gifs/Loading-Once.gif";
+import book_appointment from "../assets/buttons/BookAppointment.png";
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -33,6 +34,7 @@ const NavBar: React.FC = () => {
     <ul
       className={`flex flex-col space-y-4 md:flex-row md:space-x-10 md:space-y-0 `}
     >
+      {/* Separate Home Button
       <li className={`${styles.pop_sm} hover:underline`}>
         <div className="md:flex md:space-x-2">
           <div className="hidden md:flex">
@@ -42,12 +44,14 @@ const NavBar: React.FC = () => {
             Home
           </Link>
         </div>
-      </li>
+      </li> */}
+
       <li className={`${styles.pop_sm} hover:underline`}>
         <div className="md:flex md:space-x-2">
-          <div className="hidden md:flex">
+          {/* About Us icon */}
+          {/* <div className="hidden md:flex">
             <BsInfoCircle className="w-6 h-6" />
-          </div>
+          </div> */}
           <Link to="/about" onClick={() => setIsOpen(false)}>
             About Us
           </Link>
@@ -58,13 +62,27 @@ const NavBar: React.FC = () => {
           Resources
         </Link>
       </li> */}
+
       <li className={`${styles.pop_sm} hover:underline`}>
         <div className="md:flex md:space-x-2">
-          <div className="hidden md:flex">
+          {/* Contact Us icon */}
+          {/* <div className="hidden md:flex">
             <LuMail className="w-7 h-7" />
-          </div>
+          </div> */}
           <Link to="/contact" onClick={() => setIsOpen(false)}>
             Contact Us
+          </Link>
+        </div>
+      </li>
+
+      <li>
+        <div className="md:flex ml-5">
+          <Link to="/appointment">
+            <img
+              src={book_appointment}
+              alt="Book Appointment"
+              className="w-36 h-auto"
+            />
           </Link>
         </div>
       </li>
@@ -111,7 +129,7 @@ const NavBar: React.FC = () => {
         </div>
       )}
       <div
-        className={`top-0 bg-dimPrimary backdrop-blur-xl ${styles.paddingX} py-7  flex justify-between items-center rounded-b-[20%]`}
+        className={`top-0 bg-neutralColors-white backdrop-blur-xl ${styles.paddingX} py-7  flex justify-between items-center rounded-b-[20%]`}
       >
         <Link to="/">
           <img
@@ -121,10 +139,12 @@ const NavBar: React.FC = () => {
           />
         </Link>
 
-        <div className="hidden md:flex text-secondary justify-center items-center text-lg">
+        <div className="hidden md:flex justify-center items-center text-lg">
           {navLinks}
         </div>
-        <div className="flex justify-center items-center">
+
+        {/* LOGIN BUTTON /*}
+        {/* <div className="flex justify-center items-center">
           {currentPath !== "/app/login" && (
             <Link
               to="/app/login"
@@ -145,7 +165,7 @@ const NavBar: React.FC = () => {
               )}
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
