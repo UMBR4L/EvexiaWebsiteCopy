@@ -32,7 +32,7 @@ const NavBar: React.FC = () => {
 
   const navLinks = (
     <ul
-      className={`flex flex-col space-y-4 md:flex-row md:space-x-10 md:space-y-0 `}
+      className={`flex flex-col items-center space-y-4 md:flex-row md:space-x-10 md:space-y-0 `}
     >
       {/* Separate Home Button
       <li className={`${styles.pop_sm} hover:underline`}>
@@ -81,7 +81,7 @@ const NavBar: React.FC = () => {
             <img
               src={book_appointment}
               alt="Book Appointment"
-              className="w-36 h-auto"
+              className="w-42 h-auto"
             />
           </Link>
         </div>
@@ -90,7 +90,7 @@ const NavBar: React.FC = () => {
   );
 
   return (
-    <div className="font-inter fixed w-full z-10">
+    <div className="font-inter fixed w-full z-10 px-10 md:px-15">
       {isVisible && (
         <div
           className={`nav-overlay modal-overlay px-8 mt-[0px] ${

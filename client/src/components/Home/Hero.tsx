@@ -9,7 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="px-10  text-left md:text-center pt-[125px] md:pt-[200px] bg-primary content-center rounded-b-[2%] xs:rounded-b-[10%] relative pb-[80px]  border-b-[10px] border-b-secondary">
+      <div className="px-10 text-left md:text-center pt-[125px] md:pt-[75px] content-center">
 
         <div className="flex flex-col md:flex-row md:items-center">
 

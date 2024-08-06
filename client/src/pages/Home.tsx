@@ -8,7 +8,7 @@ import Hero from "../components/Home/Hero";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col font-inter z-0 absolute w-full bg-gradient bg-gradient-to-b from-secondary to-tree">
+    <div className="flex flex-col font-inter z-0 absolute w-full bg-neutralColors-200 p-10 md:p-20">
       <div className="mt-[0px] md:mt-[0px] w-full">
         <Hero />
       </div>
