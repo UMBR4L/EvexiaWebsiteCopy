@@ -32,7 +32,7 @@ const NavBar: React.FC = () => {
 
   const navLinks = (
     <ul
-      className={`flex flex-col items-center space-y-4 md:flex-row md:space-x-10 md:space-y-0 `}
+      className={`flex flex-col items-center space-y-4 md:flex-row md:space-x-10 md:space-y-0 leading-loose`}
     >
       {/* Separate Home Button
       <li className={`${styles.pop_sm} hover:underline`}>

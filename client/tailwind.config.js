@@ -28,7 +28,8 @@ export default {
         pavlova: "#d5c392", // Pavlova
         lemonGrass: "#9b9c82", // Lemon Grass
         // Updating the colors with new design system values
-        neutralColors: {    // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+        neutralColors: {
+          // supporting secondary colours 2 backgrounds, text colours, separators, models, etc.
           50: "#F9FAFB",
           100: "#F3F4F6",
           200: "#E5E7EB",
@@ -40,47 +41,54 @@ export default {
           800: "#1F2937",
           900: "#111827",
         },
-        primaryColors: {    // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+        primaryColors: {
+          // supporting secondary colours in backgrounds, text colours, separators, models, etc.
           100: "#FFEDCC",
           300: "#FFB655",
           500: "#FF8D00",
           700: "#AA4B00",
           900: "#331600",
         },
-        secondaryColors: {   // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+        secondaryColors: {
+          // supporting secondary colours in backgrounds, text colours, separators, models, etc.
           100: "#CCD3E7",
           300: "#8BA4E4",
           500: "#104785",
           700: "#01378F",
           900: "#00132C",
         },
-        successColors: {    // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+        successColors: {
+          // supporting secondary colours in backgrounds, text colours, separators, models, etc.
           100: "#CBEBBA",
           300: "#9FF655",
           500: "#17D1A9",
           700: "#2A714F",
           900: "#153928",
         },
-        warningColors: {    // for warning or on-hold states.
+        warningColors: {
+          // for warning or on-hold states.
           100: "#FCE480",
           300: "#F59C60",
           500: "#F6AE11",
           700: "#A47408",
           900: "#523A06",
         },
-        errorColors: {      // Generally used across error states
+        errorColors: {
+          // Generally used across error states
           100: "#F9DBD8",
           300: "#F97722",
           500: "#E03C4C",
           700: "#8B424E",
           900: "#761313",
         },
-        shadesColors: {     // supporting secondary colours in backgrounds, text colours, separators, models, etc.
+        shadesColors: {
+          // supporting secondary colours in backgrounds, text colours, separators, models, etc.
           0: "#FFFFFF",
           100: "#000000",
         },
       },
-      fontFamily: {   // not sure if this is accurate as I cant find the typography sheet
+      fontFamily: {
+        // not sure if this is accurate as I cant find the typography sheet
         H1: ["Inter Bold", "sans-serif"], // H1
         H2: ["Inter Bold", "sans-serif"], // H2
         body1: ["Inter Regular", "sans-serif"], // Body 1
@@ -88,6 +96,24 @@ export default {
         sfProBold: ["SF Pro Bold", "sans-serif"], // Existing headers and subheaders
         sfProRegular: ["SF Pro Regular", "sans-serif"], // Existing body text
         merri: ["Merriweather Italic", "sans-serif"], // Existing quotes and highlighting
+      },
+      fontSize: {
+        "base": "16px",
+        "lg": "18px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "36px",
+        "4xl": "48px",
+        "5xl": "64px",
+      },
+      lineHeight: {
+        snug: "20px",
+        relaxed: "24px",
+        loose: "28px",
+        comfy: "30px",
+        spacious: "40px",
+        roomy: "44px",
+        huge: "80px",
       },
       animation: {
         "fade-in": "fadeIn 300ms ease-out forwards",

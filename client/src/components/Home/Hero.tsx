@@ -3,20 +3,21 @@ import styles from "../../style";
 import mountain from "../../assets/art/mountain.svg";
 import flower from "../../assets/art/Flower.svg";
 import appHomeScreen from "../../assets/screens/AppHomeScreen.png";
+import appleStore from "../../assets/buttons/DownloadOnTheAppStore.png";
+import googlePlay from "../../assets/buttons/GetItOnGooglePlay.png";
 import { Link } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="px-10 text-left md:text-center pt-[125px] md:pt-[75px] content-center">
-
-        <div className="flex flex-col md:flex-row md:items-center">
-
-          <div className="text-justify text-grey relative z-10 md:w-1/2">
-
-            <div className="font-H1 text-3xl sm:text-5xl font-semibold">
-              Take care of all your Mental Health needs in one app
+      <div className="px-10 pt-[125px] md:pt-[75px]">
+        <div className="flex flex-col md:flex-row md:items-center ">
+          <div className="text-left text-grey relative z-10 md:w-2/3">
+            <div className="font-H1 text-5xl leading-huge font-semibold">
+              Take care of all your{" "}
+              <span className="text-mutedBlue">Mental Health</span> needs in one
+              app
             </div>
             <br />
 
@@ -24,19 +25,38 @@ const Hero = () => {
               <br />
             </div>
 
-            <div className="text-base font-body1 font-medium md:text-lg">
+            <div className="text-base font-body1 font-medium leading-spacious md:text-lg">
               Explore Evexia, where you begin a journey of self-care and
               support. Accessibility is everything, and we are here to enrich
               that.
             </div>
+
             <div className="hidden md:flex">
               <br />
             </div>
 
             <br />
-            <div className="flex sm:justify-center z-10">
+            <div className="flex z-10">
               <div className="flex flex-col space-y-10 md:space-x-10  md:space-y-0 md:flex-row  py-4">
-                <div className={`${styles.pop_sm} flex`}>
+                {/* Download buttons */}
+                <div className="flex space-x-4">
+                  <a href="https://apps.apple.com">
+                    <img
+                      src={appleStore}
+                      alt="Download on the Apple Store"
+                      className="w-32"
+                    />
+                  </a>
+                  <a href="https://play.google.com">
+                    <img
+                      src={googlePlay}
+                      alt="Get it on Google Play"
+                      className="w-32"
+                    />
+                  </a>
+                </div>
+                {/* Old login and download buttons */}
+                {/* <div className={`${styles.pop_sm} flex`}>
                   <Link
                     to="/app/login"
                     className={`bg-lightOrange text-white px-10 py-3 rounded-xl drop-shadow-sm border-2 border-navBarSecondary text-sm sm:text-lg font-medium mb-0`}
@@ -52,7 +72,7 @@ const Hero = () => {
                   >
                     Download Button
                   </Link>
-                </div>
+                </div> */}
 
                 {/* <div className={`${styles.pop_sm} flex font-medium mb-0`}>
                   <Link
@@ -65,10 +85,12 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 flex mt-10 md:mt-0 ml-20">
-            <div className="w-[60%] md:w-[80%] lg:w-[60%] xl:w-[50%]">
-              {/* <div className="flex w-[40%] overflow-hidden ss:max-w-[25%] sm:max-w-[25%] md:w-[12%] xl:max-w-[9%] z-0 rounded-br-[24%] animate-grow"> */}
-              <img src={appHomeScreen} className={`w-full h-full object`} />
+          <div className="md:w-1/3 flex justify-center md:mt-0 flex mt-10 ">
+            <div className="max-w-full h-auto">
+              <img
+                src={appHomeScreen}
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
         </div>
