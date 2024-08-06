@@ -5,15 +5,52 @@ import screen from "../assets/screens/news.png";
 import logo_animated from "../assets/logos/hero-animation.gif";
 import { Link } from "react-router-dom";
 import Hero from "../components/Home/Hero";
+import Card from "../components/Home/Card";
+
+import empowerYourMindIcon from "../assets/icons/empowerYourMindIcon.png";
+import holisticWellBeingIcon from "../assets/icons/holisticWellBeingIcon.png";
+import balanceYourLifeIcon from "../assets/icons/balanceYourLifeIcon.png";
+import accessibleCareIcon from "../assets/icons/accessibleCareIcon.png";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col font-inter z-0 absolute w-full bg-neutralColors-200 p-10 md:p-20">
+    <div className="flex flex-col font-inter z-0 absolute w-full bg-dimPrimary p-10 md:px-32">
       <div className="mt-[0px] md:mt-[0px] w-full">
         <Hero />
       </div>
+
       <div className="flex flex-col mx-5 md:mx-10 md:mt-0 bg-none justify-center items-center">
-        <div className="w-[100%] lg:max-w-[1500px] h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
+        {/* Card Section */}
+        <div className="mt-10 w-full">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Why Choose Evexia?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card
+              icon={empowerYourMindIcon}
+              title="Empower Your Mind"
+              description="Unlock your potential with tools and resources designed to enhance mental strength."
+            />
+            <Card
+              icon={holisticWellBeingIcon}
+              title="Holistic Well-Being"
+              description="Supporting every aspect of your mental health journey for a balanced and fulfilling life."
+            />
+            <Card
+              icon={balanceYourLifeIcon}
+              title="Balance Your Life"
+              description="Explore the comprehensive support to help you achieve and maintain a balanced, fulfilling life."
+            />
+            <Card
+              icon={accessibleCareIcon}
+              title="Accessible Care"
+              description="Ensuring mental health resources are within reach for everyone, everywhere."
+            />
+          </div>
+        </div>
+
+        {/* Old Home Page */}
+        {/* <div className="w-[100%] lg:max-w-[1500px] h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
           <div className="md:max-w-[75%] mx-7 my-0 flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-[0px] text-primary justify-center items-center md:items-left bg- w-full">
             <div className="bg-none w-[50%] flex justify-center">
               <img
@@ -56,7 +93,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        {/* <div className="w-full h-[600px] bg-[#82adbc] my-5 rounded-3xl md:rounded-r-3xl md:rounded-l-none drop-shadow-lg shadow-navBarSecondary border-2 border-dimPrimary">
+        <div className="w-full h-[600px] bg-[#82adbc] my-5 rounded-3xl md:rounded-r-3xl md:rounded-l-none drop-shadow-lg shadow-navBarSecondary border-2 border-dimPrimary">
           <div className="mx-7 my-10 flex flex-col space-y-10 text-primary justify-around items-center md:items-left">
             <img
               className="w-[250px] ss:w-[050px] sm:w-[350px] md:w-[400px] lg:w-[250px] "
@@ -70,8 +107,8 @@ const Home: React.FC = () => {
               Resources
             </Link>
           </div>
-        </div> */}
-        {/* <div className="w-full h-[600px] bg-secondary my-5 rounded-3xl md:rounded-l-3xl md:rounded-r-none md:mr-3 drop-shadow-lg border-2 border-dimPrimary shadow-navBarSecondary">
+        </div> 
+        <div className="w-full h-[600px] bg-secondary my-5 rounded-3xl md:rounded-l-3xl md:rounded-r-none md:mr-3 drop-shadow-lg border-2 border-dimPrimary shadow-navBarSecondary">
           <div className="mx-7 my-10 flex flex-col space-y-10 text-primary justify-around items-center md:items-left">
             <div className="text-5xl text-primary font-light">
               Your mind is <span className={`${styles.merri}`}>your </span>mind

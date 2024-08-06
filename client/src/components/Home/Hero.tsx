@@ -11,9 +11,16 @@ import { BrowserRouter } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="px-10 pt-[125px] md:pt-[75px]">
-        <div className="flex flex-col md:flex-row md:items-center ">
-          <div className="text-left text-grey relative z-10 md:w-2/3">
+      <div className="px-14 pt-[125px] md:pt-[125px]">
+        <div className="flex flex-col md:flex-row">
+          <div className="text-left text-grey relative z-10 md:w-2/3 pr-32">
+          
+            <br />
+            <br />
+            <br />
+
+
+
             <div className="font-H1 text-5xl leading-huge font-semibold">
               Take care of all your{" "}
               <span className="text-mutedBlue">Mental Health</span> needs in one
@@ -21,37 +28,37 @@ const Hero = () => {
             </div>
             <br />
 
-            <div className="hidden md:flex">
+            {/* <div className="hidden ">
               <br />
-            </div>
+            </div> */}
 
-            <div className="text-base font-body1 font-medium leading-spacious md:text-lg">
+            <div className="text-base font-body1 md:text-2xl leading-spacious">
               Explore Evexia, where you begin a journey of self-care and
               support. Accessibility is everything, and we are here to enrich
               that.
             </div>
 
-            <div className="hidden md:flex">
+            {/* <div className="hidden">
               <br />
-            </div>
+            </div> */}
 
             <br />
             <div className="flex z-10">
               <div className="flex flex-col space-y-10 md:space-x-10  md:space-y-0 md:flex-row  py-4">
                 {/* Download buttons */}
-                <div className="flex space-x-4">
+                <div className="flex space-x-10">
                   <a href="https://apps.apple.com">
                     <img
                       src={appleStore}
                       alt="Download on the Apple Store"
-                      className="w-32"
+                      className="w-full"
                     />
                   </a>
                   <a href="https://play.google.com">
                     <img
                       src={googlePlay}
                       alt="Get it on Google Play"
-                      className="w-32"
+                      className="w-full"
                     />
                   </a>
                 </div>

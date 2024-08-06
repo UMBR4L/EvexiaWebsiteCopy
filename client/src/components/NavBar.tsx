@@ -90,7 +90,7 @@ const NavBar: React.FC = () => {
   );
 
   return (
-    <div className="font-inter fixed w-full z-10 px-10 md:px-15">
+    <div className="font-inter fixed w-full z-10 px-10 md:px-20">
       {isVisible && (
         <div
           className={`nav-overlay modal-overlay px-8 mt-[0px] ${
