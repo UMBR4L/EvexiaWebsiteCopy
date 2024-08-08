@@ -30,24 +30,19 @@ export default {
         // Updating the colors with new design system values
         neutralColors: {
           // supporting secondary colours 2 backgrounds, text colours, separators, models, etc.
-          50: "#F9FAFB",
-          100: "#F3F4F6",
-          200: "#E5E7EB",
-          300: "#D1D5DB",
-          400: "#9CA3AF",
-          500: "#6B7280",
-          600: "#4B5563",
-          700: "#374151",
-          800: "#1F2937",
-          900: "#111827",
+          10: "#F7F9FA",   // white
+          25: "#B1B2B2",   // light grey
+          50: "#9B8C8C",   // grey
+          75: "#4E4F4F",   // dark grey
+          100: "#222222",  // black
         },
         primaryColors: {
           // supporting secondary colours in backgrounds, text colours, separators, models, etc.
-          100: "#FFEDCC",
-          300: "#FFB655",
-          500: "#FF8D00",
-          700: "#AA4B00",
-          900: "#331600",
+          10: "DAEBF2",   // lightest blue
+          25: "A3C9D9",   // light blue
+          50: "2D7A9C",   // blue
+          75: "144D66",   // dark blue
+          100: "#062E40", // black-blue
         },
         secondaryColors: {
           // supporting secondary colours in backgrounds, text colours, separators, models, etc.

@@ -6,6 +6,7 @@ import logo_animated from "../assets/logos/hero-animation.gif";
 import { Link } from "react-router-dom";
 import Hero from "../components/Home/Hero";
 import Card from "../components/Home/Card";
+import PersonalizedTherapySessions from "../components/Home/PersonalizedTherapySessions";
 
 import empowerYourMindIcon from "../assets/icons/empowerYourMindIcon.png";
 import holisticWellBeingIcon from "../assets/icons/holisticWellBeingIcon.png";
@@ -14,18 +15,19 @@ import accessibleCareIcon from "../assets/icons/accessibleCareIcon.png";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col font-inter z-0 absolute w-full bg-dimPrimary p-10 md:px-32">
+    <div className="flex flex-col font-inter z-0 absolute w-full bg-dimPrimary pt-10 md:px-32 ">
       <div className="mt-[0px] md:mt-[0px] w-full">
         <Hero />
       </div>
 
-      <div className="flex flex-col mx-5 md:mx-10 md:mt-0 bg-none justify-center items-center">
+      <div className="flex flex-col md:mt-0 bg-none justify-items-center items-center">
+
         {/* Card Section */}
-        <div className="mt-10 w-full">
-          <h2 className="text-3xl font-bold text-center mb-8">
+        <div className="w-[1262px] mb-24">
+          <h2 className="text-5xl font-bold text-left mb-8">
             Why Choose Evexia?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[41px]">
             <Card
               icon={empowerYourMindIcon}
               title="Empower Your Mind"
@@ -48,6 +50,9 @@ const Home: React.FC = () => {
             />
           </div>
         </div>
+
+        {/* Personalized Therapy Sessions Section */}
+        <PersonalizedTherapySessions />
 
         {/* Old Home Page */}
         {/* <div className="w-[100%] lg:max-w-[1500px] h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">

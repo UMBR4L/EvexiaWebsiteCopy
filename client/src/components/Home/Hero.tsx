@@ -43,7 +43,7 @@ const Hero = () => {
             </div> */}
 
             <br />
-            <div className="flex z-10">
+            
               <div className="flex flex-col space-y-10 md:space-x-10  md:space-y-0 md:flex-row  py-4">
                 {/* Download buttons */}
                 <div className="flex space-x-10">
@@ -90,7 +90,7 @@ const Hero = () => {
                   </Link>
                 </div> */}
               </div>
-            </div>
+            
           </div>
           <div className="md:w-1/3 flex justify-center md:mt-0 flex mt-10 ">
             <div className="max-w-full h-auto">
