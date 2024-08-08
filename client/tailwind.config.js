@@ -38,10 +38,10 @@ export default {
         },
         primaryColors: {
           // supporting secondary colours in backgrounds, text colours, separators, models, etc.
-          10: "DAEBF2",   // lightest blue
-          25: "A3C9D9",   // light blue
-          50: "2D7A9C",   // blue
-          75: "144D66",   // dark blue
+          10: "#DAEBF2",   // lightest blue
+          25: "#A3C9D9",   // light blue
+          50: "#2D7A9C",   // blue
+          75: "#144D66",   // dark blue
           100: "#062E40", // black-blue
         },
         secondaryColors: {
@@ -83,15 +83,15 @@ export default {
         },
       },
       fontFamily: {
-        // not sure if this is accurate as I cant find the typography sheet
-        H1: ["Inter Bold", "sans-serif"], // H1
-        H2: ["Inter Bold", "sans-serif"], // H2
-        body1: ["Inter Regular", "sans-serif"], // Body 1
-        subheader: ["Inter Semi Bold", "sans-serif"], // Subheaders and selected buttons
-        sfProBold: ["SF Pro Bold", "sans-serif"], // Existing headers and subheaders
-        sfProRegular: ["SF Pro Regular", "sans-serif"], // Existing body text
-        merri: ["Merriweather Italic", "sans-serif"], // Existing quotes and highlighting
-        montserratBold: ["Montserrat", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        merri: ["Merriweather Italic", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      fontWeight: {
+        regular: 400,
+        medium: 500,
+        semiBold: 600,
+        bold: 700,
       },
       fontSize: {
         "base": "16px",

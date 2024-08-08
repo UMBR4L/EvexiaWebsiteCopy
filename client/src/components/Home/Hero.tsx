@@ -9,7 +9,7 @@ import googlePlay from "../../assets/buttons/GetItOnGooglePlay.png";
 import { Link } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <div className="relative">
       <div className="px-10 pt-[125px] md:pt-[125px]">
@@ -80,7 +80,7 @@ const Hero = () => {
                   >
                     Download Button
                   </Link>
-                </div> */}
+                </div> */} 
 
                 {/* <div className={`${styles.pop_sm} flex font-medium mb-0`}>
                   <Link
@@ -93,7 +93,7 @@ const Hero = () => {
               </div>
             
           </div>
-          <div className="flex justify-center md:mt-0 flex mt-10 ">
+          <div className="flex justify-center md:mt-0 mt-10 ">
             <div className="w-full h-auto">
               <img
                 src={appHomeScreen}

@@ -1,8 +1,8 @@
-import styles from "../style";
-import mountains from "../assets/art/mountains.png";
-import book from "../assets/art/research.png";
-import screen from "../assets/screens/news.png";
-import logo_animated from "../assets/logos/hero-animation.gif";
+// import styles from "../style";
+// import mountains from "../assets/art/mountains.png";
+// import book from "../assets/art/research.png";
+// import screen from "../assets/screens/news.png";
+// import logo_animated from "../assets/logos/hero-animation.gif";
 import { Link } from "react-router-dom";
 import Hero from "../components/Home/Hero";
 import Card from "../components/Home/Card";
@@ -10,6 +10,8 @@ import PersonalizedTherapySessions from "../components/Home/PersonalizedTherapyS
 import ComprehensivePrograms from "../components/Home/ComprehensivePrograms";
 import SelfGuidedToolkits from "../components/Home/SelfGuidedToolkits";
 import FAQ from "../components/Home/FAQ";
+import AnytimeAnywhere from "../components/Home/AnytimeAnywhere";
+import Footer from "../components/Footer/Footer";
 
 import empowerYourMindIcon from "../assets/icons/empowerYourMindIcon.png";
 import holisticWellBeingIcon from "../assets/icons/holisticWellBeingIcon.png";
@@ -65,6 +67,9 @@ const Home: React.FC = () => {
 
         {/* FAQ Section */}
         <FAQ />
+
+        {/* Anytime, Anywhere Section */}
+        <AnytimeAnywhere />
 
         {/* Old Home Page */}
         {/* <div className="w-[100%] lg:max-w-[1500px] h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
@@ -143,6 +148,9 @@ const Home: React.FC = () => {
             />
           </div>
         </div> */}
+
+        {/* Footer Section */}
+        <Footer />
       </div>
     </div>
   );

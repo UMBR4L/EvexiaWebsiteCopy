@@ -52,7 +52,7 @@ const NavBar: React.FC = () => {
           {/* <div className="hidden md:flex">
             <BsInfoCircle className="w-6 h-6" />
           </div> */}
-          <Link to="/about" onClick={() => setIsOpen(false)} className="text-xl font-body1">
+          <Link to="/about-us" onClick={() => setIsOpen(false)} className="text-xl font-inter font-regular leading-loose">
             About Us
           </Link>
         </div>
@@ -69,7 +69,7 @@ const NavBar: React.FC = () => {
           {/* <div className="hidden md:flex">
             <LuMail className="w-7 h-7" />
           </div> */}
-          <Link to="/contact" onClick={() => setIsOpen(false)} className="text-xl font-body1">
+          <Link to="/contact-us" onClick={() => setIsOpen(false)} className="text-xl font-inter font-regular leading-loose">
             Contact Us
           </Link>
         </div>
@@ -90,8 +90,8 @@ const NavBar: React.FC = () => {
   );
 
   return (
-    <div className="font-inter fixed w-full z-10 px-10 md:px-20">
-      {isVisible && (
+    <div className="w-full fixed z-10 px-28 ">
+      {/* {isVisible && (
         <div
           className={`nav-overlay modal-overlay px-8 mt-[0px] ${
             isOpen ? "animate-slide-left" : "animate-slide-up"
@@ -127,9 +127,9 @@ const NavBar: React.FC = () => {
             <div className="text-secondary text-2xl px-2 mt-5">{navLinks}</div>
           </div>
         </div>
-      )}
+      )} */}
       <div
-        className={`top-0 bg-neutralColors-white backdrop-blur-xl ${styles.paddingX} py-7  flex justify-between items-center rounded-b-[20%]`}
+        className={`top-0 backdrop-blur-xl py-7  flex justify-between items-center`}
       >
         <Link to="/">
           <img

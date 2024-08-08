@@ -17,7 +17,7 @@ const PersonalizedTherapySessions: React.FC = () => {
         <h2 className="text-4xl font-bold mb-4 text-primaryColors-100">
           Personalized Therapy Sessions
         </h2>
-        <p className="text-2xl text-neutralColors-100 font-body1 leading-roomy">
+        <p className="text-2xl text-neutralColors-100 leading-roomy">
           Experience tailored 1:1 therapy sessions with licensed professionals.
           Our therapists are dedicated to providing you with personalized
           support and guidance.

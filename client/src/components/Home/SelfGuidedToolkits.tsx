@@ -5,7 +5,7 @@ const SelfGuidedToolkits: React.FC = () => {
   return (
     <div className="flex items-center mb-32">
       <img src={SelfGuidedToolkitsScreen} alt="Self-Guided Toolkits Screen" />
-      <div className="ml-20 mr-[180px]">
+      <div className="ml-20 mr-36">
         <h2 className="text-4xl font-bold mb-4 text-primaryColors-100">
           Self-Guided Toolkits
         </h2>
