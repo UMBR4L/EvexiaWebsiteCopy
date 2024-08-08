@@ -1,19 +1,20 @@
 import React from "react";
-import styles from "../../style";
-import mountain from "../../assets/art/mountain.svg";
-import flower from "../../assets/art/Flower.svg";
+// import styles from "../../style";
+// import mountain from "../../assets/art/mountain.svg";
+// import flower from "../../assets/art/Flower.svg";
 import appHomeScreen from "../../assets/screens/AppHomeScreen.png";
 import appleStore from "../../assets/buttons/DownloadOnTheAppStore.png";
 import googlePlay from "../../assets/buttons/GetItOnGooglePlay.png";
+
 import { Link } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="px-14 pt-[125px] md:pt-[125px]">
+      <div className="px-10 pt-[125px] md:pt-[125px]">
         <div className="flex flex-col md:flex-row">
-          <div className="text-left text-grey relative z-10 md:w-2/3 pr-32">
+          <div className="text-left text-grey relative z-10 md:w-[756px] pr-20">
           
             <br />
             <br />
@@ -92,8 +93,8 @@ const Hero = () => {
               </div>
             
           </div>
-          <div className="md:w-1/3 flex justify-center md:mt-0 flex mt-10 ">
-            <div className="max-w-full h-auto">
+          <div className="flex justify-center md:mt-0 flex mt-10 ">
+            <div className="w-full h-auto">
               <img
                 src={appHomeScreen}
                 className="w-full h-auto object-contain"

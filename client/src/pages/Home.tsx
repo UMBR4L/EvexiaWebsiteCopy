@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import Hero from "../components/Home/Hero";
 import Card from "../components/Home/Card";
 import PersonalizedTherapySessions from "../components/Home/PersonalizedTherapySessions";
+import ComprehensivePrograms from "../components/Home/ComprehensivePrograms";
+import SelfGuidedToolkits from "../components/Home/SelfGuidedToolkits";
+import FAQ from "../components/Home/FAQ";
 
 import empowerYourMindIcon from "../assets/icons/empowerYourMindIcon.png";
 import holisticWellBeingIcon from "../assets/icons/holisticWellBeingIcon.png";
@@ -15,7 +18,7 @@ import accessibleCareIcon from "../assets/icons/accessibleCareIcon.png";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col font-inter z-0 absolute w-full bg-dimPrimary pt-10 md:px-32 ">
+    <div className="flex flex-col font-inter z-0 absolute w-full bg-dimPrimary pt-10 md:px-40 ">
       <div className="mt-[0px] md:mt-[0px] w-full">
         <Hero />
       </div>
@@ -23,11 +26,11 @@ const Home: React.FC = () => {
       <div className="flex flex-col md:mt-0 bg-none justify-items-center items-center">
 
         {/* Card Section */}
-        <div className="w-[1262px] mb-24">
+        <div className="mb-32 w-[1262px]">
           <h2 className="text-5xl font-bold text-left mb-8">
             Why Choose Evexia?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[41px]">
+          <div className="grid grid-cols-4 gap-[41px]">
             <Card
               icon={empowerYourMindIcon}
               title="Empower Your Mind"
@@ -53,6 +56,15 @@ const Home: React.FC = () => {
 
         {/* Personalized Therapy Sessions Section */}
         <PersonalizedTherapySessions />
+
+        {/* Comprehensive Programs Section */}
+        <ComprehensivePrograms />
+
+        {/* Self-Guided Toolkits Section */}
+        <SelfGuidedToolkits />
+
+        {/* FAQ Section */}
+        <FAQ />
 
         {/* Old Home Page */}
         {/* <div className="w-[100%] lg:max-w-[1500px] h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">

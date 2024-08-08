@@ -52,7 +52,7 @@ const NavBar: React.FC = () => {
           {/* <div className="hidden md:flex">
             <BsInfoCircle className="w-6 h-6" />
           </div> */}
-          <Link to="/about" onClick={() => setIsOpen(false)}>
+          <Link to="/about" onClick={() => setIsOpen(false)} className="text-xl font-body1">
             About Us
           </Link>
         </div>
@@ -69,7 +69,7 @@ const NavBar: React.FC = () => {
           {/* <div className="hidden md:flex">
             <LuMail className="w-7 h-7" />
           </div> */}
-          <Link to="/contact" onClick={() => setIsOpen(false)}>
+          <Link to="/contact" onClick={() => setIsOpen(false)} className="text-xl font-body1">
             Contact Us
           </Link>
         </div>
@@ -133,7 +133,7 @@ const NavBar: React.FC = () => {
       >
         <Link to="/">
           <img
-            className={`w-[120px] md:w-[150px] ${styles.pop_sm}`}
+            className={`w-[214px] ${styles.pop_sm}`}
             src={logo}
             alt="Logo"
           />
