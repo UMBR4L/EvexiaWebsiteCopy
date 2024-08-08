@@ -19,13 +19,13 @@ const Home: React.FC = () => {
         <Hero />
       </div>
 
-      <div className="flex flex-col md:mt-0 bg-none justify-center items-center">
+      <div className="flex flex-col mx-5 md:mx-10 md:mt-0 bg-none justify-center items-center">
         {/* Card Section */}
-        <div className="w-full">
-          <h2 className="text-5xl font-bold mb-8">
+        <div className="mt-10 w-full">
+          <h2 className="text-3xl font-bold text-center mb-8">
             Why Choose Evexia?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[41px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card
               icon={empowerYourMindIcon}
               title="Empower Your Mind"
