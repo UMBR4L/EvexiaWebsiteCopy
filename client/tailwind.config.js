@@ -30,18 +30,18 @@ export default {
         // Updating the colors with new design system values
         neutralColors: {
           // supporting secondary colours 2 backgrounds, text colours, separators, models, etc.
-          10: "#F7F9FA",   // white
-          25: "#B1B2B2",   // light grey
-          50: "#9B8C8C",   // grey
-          75: "#4E4F4F",   // dark grey
-          100: "#222222",  // black
+          10: "#F7F9FA", // white
+          25: "#B1B2B2", // light grey
+          50: "#9B8C8C", // grey
+          75: "#4E4F4F", // dark grey
+          100: "#222222", // black
         },
         primaryColors: {
           // supporting secondary colours in backgrounds, text colours, separators, models, etc.
-          10: "#DAEBF2",   // lightest blue
-          25: "#A3C9D9",   // light blue
-          50: "#2D7A9C",   // blue
-          75: "#144D66",   // dark blue
+          10: "#DAEBF2", // lightest blue
+          25: "#A3C9D9", // light blue
+          50: "#2D7A9C", // blue
+          75: "#144D66", // dark blue
           100: "#062E40", // black-blue
         },
         secondaryColors: {
@@ -62,11 +62,9 @@ export default {
         },
         warningColors: {
           // for warning or on-hold states.
-          100: "#FCE480",
-          300: "#F59C60",
-          500: "#F6AE11",
-          700: "#A47408",
-          900: "#523A06",
+          10: "#F3DAC3", // Warning 10 (lightest warning color)
+          500: "#F38723", // Warning (default warning color)
+          100: "#844205", // Warning 100 (darkest warning color)
         },
         errorColors: {
           // Generally used across error states
@@ -94,9 +92,9 @@ export default {
         bold: 700,
       },
       fontSize: {
-        "base": "16px",
-        "lg": "18px",
-        "xl": "20px",
+        base: "16px",
+        lg: "18px",
+        xl: "20px",
         "2xl": "24px",
         "3xl": "36px",
         "4xl": "48px",

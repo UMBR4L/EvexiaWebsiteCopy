@@ -26,7 +26,6 @@ const Home: React.FC = () => {
       </div>
 
       <div className="flex flex-col md:mt-0 bg-none justify-items-center items-center">
-
         {/* Card Section */}
         <div className="mb-32 w-[1262px]">
           <h2 className="text-5xl font-bold text-left mb-8">
@@ -70,6 +69,9 @@ const Home: React.FC = () => {
 
         {/* Anytime, Anywhere Section */}
         <AnytimeAnywhere />
+
+        {/* Footer Section */}
+        <Footer />
 
         {/* Old Home Page */}
         {/* <div className="w-[100%] lg:max-w-[1500px] h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
@@ -148,9 +150,6 @@ const Home: React.FC = () => {
             />
           </div>
         </div> */}
-
-        {/* Footer Section */}
-        <Footer />
       </div>
     </div>
   );
