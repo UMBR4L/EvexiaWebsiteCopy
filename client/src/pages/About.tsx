@@ -10,7 +10,7 @@ import MeetOurTeam from "../components/About/MeetOurTeam";
 
 const About = () => {
   return (
-    <div className="flex flex-col font-inter z-0 absolute w-full bg-dimPrimary">
+    <div className="flex flex-col font-inter z-0 absolute w-full mt-72 bg-dimPrimary">
       <OurStory />
 
       <OurMission />

@@ -6,8 +6,8 @@ import statImage2 from "../../assets/photos/manLookingOutWindow.png";
 
 const OurStory: React.FC = () => {
   return (
-    <section className="text-neutralColors-100 font-inter flex flex-col md:flex-row justify-between items-center my-72 mx-24">
-      <div className=" w-[577px] pr-[53px]">
+    <section className="text-neutralColors-100 font-inter flex flex-col md:flex-row justify-between items-center mb-72 mx-24">
+      <div className="w-[577px] pr-[53px]">
         <h2 className="text-5xl font-bold mb-6">Our Story</h2>
         <p className="text-2xl font-regular leading-roomy mb-4">
           Evexia was born out of a deep-rooted passion for mental health

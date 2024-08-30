@@ -1,5 +1,5 @@
 import React from "react";
-import founderImage from "../../assets/members/navyaGoel--2.png"; // Adjust the path as needed
+import founderImage from "../../assets/members/navyaGoel--3.png"; // Adjust the path as needed
 
 const FounderMessage: React.FC = () => {
   return (
