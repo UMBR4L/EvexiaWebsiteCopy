@@ -28,7 +28,7 @@ app.post('/send-email', async (req: Request, res: Response, next: NextFunction) 
 
     let mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'inquiry@evexia.com',  // always sends to this email
+      to: 'outreachevexia@gmail.com',  // always sends to this email
       subject: subject,
       text: text,
     };
