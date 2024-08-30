@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import images
-import navyaGoel from "../../assets/members/navyaGoel--2.png";
+import navyaGoel from "../../assets/members/navyaGoel--3.png";
 import baaniSingh from "../../assets/members/baaniSingh.png";
 import saAdatAzamSaniat from "../../assets/members/saAdatAzamSaniat--2.png";
 import aaryamanRattan from "../../assets/members/aaryamanRattan--2.png";
