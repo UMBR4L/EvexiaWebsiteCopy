@@ -97,7 +97,7 @@ const ContactForm: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="bg-primaryColors-75 text-white p-3 rounded text-lg font-bold"
+          className="w-full bg-mutedBlue text-white p-3 rounded-lg text-2xl font-semiBold leading-relaxed"
         >
           Submit
         </button>
