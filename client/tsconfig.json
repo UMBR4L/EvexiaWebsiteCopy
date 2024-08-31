@@ -16,8 +16,8 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,  // until old website is removed
+    "noUnusedParameters": false,  // temporarily
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
