@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
         </h2>
         <p className="text-lg text-neutralColors-100 leading-loose">
           Available for questions... <br />
-          <span className="font-bold">inquiry@evexia.com</span>{" "}
+          <span className="font-bold">outreachevexia@gmail.com</span>{" "}
         </p>
       </div>
 
