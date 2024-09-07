@@ -41,7 +41,7 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <nav className="w-full fixed z-10 bg-shadesColors-0">
+    <nav className="max-w-full fixed z-10 bg-shadesColors-0">
       {/* {isVisible && (
         <div
           className={`nav-overlay modal-overlay px-8 mt-[0px] ${
@@ -73,7 +73,7 @@ const NavBar: React.FC = () => {
               </button>
             </div>
 
-            <div className="bg-primary w-full h-[1px] "></div>
+            <div className="bg-primary max-w-full h-[1px] "></div>
 
             <div className="text-secondary text-2xl px-2 mt-5">{navLinks}</div>
           </div>

@@ -3,9 +3,9 @@ import instagramLogo from "../../assets/logos/instagramLogo.png";
 import facebookLogo from "../../assets/logos/facebookLogo.png";
 import twitterLogo from "../../assets/logos/twitterLogo.png";
 
-const ContactInfo: React.FC = () => {
+const SocialMediaLinks: React.FC = () => {
   return (
-    <div className="flex justify-between space-x-[50px]">
+    <div className="max-w-full flex justify-between space-x-4">
       <a href="https://instagram.com">
         <img src={instagramLogo} alt="instagram logo" />
       </a>
@@ -19,4 +19,4 @@ const ContactInfo: React.FC = () => {
   );
 };
 
-export default ContactInfo;
+export default SocialMediaLinks;

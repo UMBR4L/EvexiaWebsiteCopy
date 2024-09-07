@@ -3,15 +3,15 @@ import elipseWhite from "../../assets/icons/ellipseWhite.png";
 
 const LegalLinks: React.FC = () => {
   return (
-    <div className="w-[764.44px] flex space-x-[62px] text-sm">
+    <div className="max-w-full flex  text-sm">
       <a href="/terms-conditions" className="font-regular text-lg text-white">
         Terms & Conditions
       </a>
-      <img src={elipseWhite} alt="white elipse" className="w-[17px] h-[17px]" />
+      <img src={elipseWhite} alt="white elipse" className="w-auto h-[50%]" />
       <a href="/privacy-policy" className="font-regular text-lg text-white">
         Privacy Policy
       </a>
-      <img src={elipseWhite} alt="white elipse" className="w-[17px] h-[17px]" />
+      <img src={elipseWhite} alt="white elipse" className="w-auto h-[50%]" />
       <a href="/partner-agreement" className="font-regular text-lg text-white">
         Partner Agreement
       </a>

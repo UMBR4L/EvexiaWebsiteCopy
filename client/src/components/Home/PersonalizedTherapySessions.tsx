@@ -6,14 +6,14 @@ import therapist4 from "../../assets/therapists/therapist4.png";
 
 const PersonalizedTherapySessions: React.FC = () => {
   return (
-    <div className="flex mb-16 items-center">
-      <div className="grid grid-cols-2 gap-6">
-        <img src={therapist1} alt="Therapist 1" className="w-[188px]"/>
-        <img src={therapist2} alt="Therapist 2" className="w-[188px]"/>
-        <img src={therapist3} alt="Therapist 3" className="w-[188px]"/>
-        <img src={therapist4} alt="Therapist 4" className="w-[188px]"/>
+    <div className="flex flex-col mb-16 items-center">
+      <div className="w-full grid grid-cols-2 gap-6">
+        <img src={therapist1} alt="Therapist 1" className="max-w-full"/>
+        <img src={therapist2} alt="Therapist 2" className="max-w-full"/>
+        <img src={therapist3} alt="Therapist 3" className="max-w-full"/>
+        <img src={therapist4} alt="Therapist 4" className="max-w-full"/>
       </div>
-      <div className="ml-20 w-[55%]">
+      <div className=" max-w-full">
         <h2 className="text-4xl font-bold mb-4 text-primaryColors-100">
           Personalized Therapy Sessions
         </h2>

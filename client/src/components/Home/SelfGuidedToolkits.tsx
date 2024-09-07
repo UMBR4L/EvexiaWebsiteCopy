@@ -3,9 +3,13 @@ import SelfGuidedToolkitsScreen from "../../assets/screens/SelfGuidedToolkitsScr
 
 const SelfGuidedToolkits: React.FC = () => {
   return (
-    <div className="flex items-center mb-32">
-      <img src={SelfGuidedToolkitsScreen} alt="Self-Guided Toolkits Screen" />
-      <div className="ml-20 mr-36">
+    <div className="flex flex-col items-center mb-32">
+      <div className="">
+        <img
+          src={SelfGuidedToolkitsScreen}
+          alt="Self-Guided Toolkits Screen"
+          className="w-[50%]"
+        />
         <h2 className="text-4xl font-bold mb-4 text-primaryColors-100">
           Self-Guided Toolkits
         </h2>

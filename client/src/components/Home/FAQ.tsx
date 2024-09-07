@@ -13,12 +13,12 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <div className="w-full px-3 mb-32">
+    <div className="w-full mb-32">
       <h2 className="text-2xl text-center font-semiBold text-primaryColors-100 mb-2">FAQ</h2>
       <h3 className="text-4xl text-center font-bold mb-24 text-primaryColors-100">Frequently Asked Questions</h3>
       <ul className="space-y-6">
         {faqs.map((faq, index) => (
-          <li key={index} className="w-full border-b border-[#a6a6a6] py-5">
+          <li key={index} className="max-w-full border-b border-[#a6a6a6] py-5">
             <a href="#" className="flex justify-between items-center text-2xl font-semiBold text-neutralColors-100 flex-grow text-left">
               {faq}
             <img src={arrowRight} alt="arrow pointing right" />

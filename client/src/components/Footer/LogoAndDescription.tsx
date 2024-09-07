@@ -11,12 +11,12 @@ const LogoDescription: React.FC = () => {
   };
 
   return (
-    <div className="w-[608.2px] pr-[45%]">
+    <div className="">
       <Link to="/" onClick={handleLogoClick}>
         <img
           src={EvexiaLogoWhite}
           alt="Evexia logo in white"
-          className="w-[306.19px] mb-6"
+          className="max-w-full mb-6"
         />
       </Link>
       <p className="text-base font-semibold mb-3">What does Evexia mean?</p>
