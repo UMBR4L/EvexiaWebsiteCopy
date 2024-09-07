@@ -6,7 +6,7 @@ import tl from "../assets/art/corner-prop-08.svg";
 import tr from "../assets/art/corner-prop-09.svg";
 import bl from "../assets/art/corner-prop-10.svg";
 import br from "../assets/art/corner-prop-11.svg";
-import logo from "../assets/logos/Sideways.png";
+import logo from "../assets/logos/EvexiaLogo__WithText.png";
 import styles from "../style";
 
 const Login: React.FC = () => {

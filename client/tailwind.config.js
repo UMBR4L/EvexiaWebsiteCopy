@@ -4,6 +4,11 @@ export default {
   mode: "jit",
   theme: {
     extend: {
+      spacing: {
+        'gutter': '20px',  // gutter width
+        'mobile-margin': '16px',  // margin for mobile
+        'desktop-margin': '32px',  // margin for desktop
+      },
       transitionProperty: {
         "max-height": "max-height",
       },
@@ -199,12 +204,9 @@ export default {
       },
     },
     screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1512px",
-      lg: "1700px",
-      xl: "1900px",
+      'sm': '320px',  // mobile breakpoint
+      'md': '768px',  // tablet breakpoint
+      'lg': '1024px', // desktop breakpoint
     },
   },
   plugins: [require("@tailwindcss/forms")],
