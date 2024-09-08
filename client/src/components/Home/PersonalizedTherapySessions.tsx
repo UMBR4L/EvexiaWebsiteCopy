@@ -14,7 +14,7 @@ const PersonalizedTherapySessions: React.FC = () => {
         <img src={therapist4} alt="Therapist 4" className="max-w-full"/>
       </div>
       <div className=" max-w-full">
-        <h2 className="text-4xl font-bold mb-4 text-primaryColors-100">
+        <h2 className="text-3xl font-bold mb-4 text-primaryColors-100">
           Personalized Therapy Sessions
         </h2>
         <p className="text-2xl text-neutralColors-100 leading-roomy">

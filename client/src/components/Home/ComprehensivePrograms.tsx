@@ -4,7 +4,7 @@ import ComprehensiveProgramsScreen from "../../assets/screens/ComprehensiveProgr
 const ComprehensivePrograms: React.FC = () => {
   return (
     <div className="w-full flex flex-col justify-between items-center mb-16">
-        <h2 className="w-full text-4xl font-bold mb-4 text-primaryColors-100">
+        <h2 className="w-full text-3xl font-bold mb-4 text-primaryColors-100">
           Comprehensive Programs
         </h2>
         <p className="text-2xl text-neutralColors-100 font-body1 leading-roomy">
