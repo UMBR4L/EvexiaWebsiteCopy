@@ -10,7 +10,7 @@ const SelfGuidedToolkits: React.FC = () => {
           alt="Self-Guided Toolkits Screen"
           className="w-[50%]"
         />
-        <h2 className="text-4xl font-bold mb-4 text-primaryColors-100">
+        <h2 className="text-3xl font-bold mb-4 text-primaryColors-100">
           Self-Guided Toolkits
         </h2>
         <p className="text-2xl text-neutralColors-100 font-body1 leading-roomy">
