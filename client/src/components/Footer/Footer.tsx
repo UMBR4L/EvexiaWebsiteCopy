@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-primaryColors-75 text-white py-20">
       {/* Main Footer Content */}
-      <div className="w-full flex flex-col md:grid md:grid-cols-6 lg:grid-cols-12 md:gap-gutter mx-mobile-padding lg:mx-desktop-padding pb-10">
+      <div className="w-full flex flex-col md:grid md:grid-cols-6 lg:grid-cols-12 md:gap-gutter px-mobile-padding lg:px-desktop-padding pb-10">
         {" "}
 
           <div className="w-full lg:col-span-3">

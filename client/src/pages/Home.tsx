@@ -30,7 +30,7 @@ const Home: React.FC = () => {
 
         {/* Why Choose Evexia Section */}
         <section className="w-full md:col-span-full mb-20xl px-base">
-          <h2 className="text-3xl font-extraBold text-left mb-2xl">
+          <h2 className="text-3xl font-extraBold text-left leading-roomy mb-2xl">
             Why Choose Evexia?
           </h2>
 

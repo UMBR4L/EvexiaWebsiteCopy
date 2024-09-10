@@ -25,12 +25,12 @@ const Hero: React.FC = () => {
           <img
             src={appHomeScreen}
             alt="App Home Screen"
-            className="w-[75%] h-auto object-contain"
+            className="w-auto object-contain"
           />
         </div>
 
         {/* Description */}
-        <div className="font-medium text-lg px-lg md:text-2xl leading-comfy">
+        <div className="font-medium text-xl px-lg md:text-2xl leading-comfy">
           Explore Evexia, where you begin a journey of self-care and support.
           Accessibility is everything, and we are here to enrich that.
         </div>

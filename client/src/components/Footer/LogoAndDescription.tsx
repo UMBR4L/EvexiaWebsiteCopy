@@ -16,7 +16,7 @@ const LogoDescription: React.FC = () => {
         <img
           src={EvexiaLogoWhite}
           alt="Evexia logo in white"
-          className="max-w-full mb-6"
+          className="w-[80%] mb-6"
         />
       </Link>
       <p className="text-base font-semibold mb-3">What does Evexia mean?</p>
