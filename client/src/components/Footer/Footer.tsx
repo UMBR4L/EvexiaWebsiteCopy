@@ -5,34 +5,46 @@ import NavigationLinks from "./NavigationLinks";
 import ContactInfo from "./ContactInfo";
 import SocialMediaLinks from "./SocialMediaLinks";
 import LegalLinks from "./LegalLinks";
+import dividerMobile from "../../assets/dividers/divider--mobile.png";
+import footerBackground from "../../assets/art/footer-background.png";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-primaryColors-75 text-white py-20">
-      {/* Main Footer Content */}
-      <div className="w-full flex flex-col md:grid md:grid-cols-6 lg:grid-cols-12 md:gap-gutter px-mobile-padding lg:px-desktop-padding pb-10">
-        {" "}
+    <footer className="w-full text-white">
+      <img src={footerBackground} alt="footer background art" className="mb-[-1px]"/>
+      <div className="w-full bg-primaryColors-75 flex flex-col space-y-2xl md:grid md:grid-cols-6 lg:grid-cols-12 md:gap-gutter px-mobile-padding lg:px-desktop-padding py-xl mx-[-mobile-padding]">
+      {/* Left Section: Logo and Description */}
+      <div className="flex flex-col space-y-4xl">
+        <div className="w-full lg:col-span-3">
+          <LogoAndDescription />
+        </div>
 
-          <div className="w-full lg:col-span-3">
-            {/* Left Section: Logo and Description */}
-            <LogoAndDescription />
-          </div>
-          <div className="w-full lg:col-span-6 flex flex-col md:space-x-14">
-            <UsefulLinks />
-            <NavigationLinks />
-            <ContactInfo />
-          </div>
+        <div className="w-full flex flex-col lg:col-span-6  md:space-x-14">
+          {/* <UsefulLinks /> coming soon*/}
+          {/* <NavigationLinks /> */}
+          <ContactInfo />
+        </div>
 
-        <div className="w-full lg:col-span-6 flex flex-col justify-between items-center py-10 border-b-[1px] border-white">
+        <img src={dividerMobile} alt="divider line" className="w-full" />
+      </div>
+
+      <div className="flex flex-col space-y-2xl">
+        <div className="w-full lg:col-span-6 flex flex-col space-y-base">
           <LegalLinks />
         </div>
-        <div className="w-full lg:col-span-6 flex justify-center lg:justify-end">
+
+        {/* <div className="w-full lg:col-span-6 flex justify-center lg:justify-end">
           <SocialMediaLinks />
-        </div>
-        <p className="text-center text-base font-semibold pt-8">
-          Copyright © 2024 Evexia, Canada, Inc. All rights reserved.
-        </p>
+        </div> */}
+
+        <img src={dividerMobile} alt="divider line" className="w-full" />
       </div>
+
+
+      <p className="text-center text-base font-semibold">
+        Copyright © 2024 Evexia, Canada, Inc. All rights reserved.
+      </p>
+</div>
     </footer>
   );
 };

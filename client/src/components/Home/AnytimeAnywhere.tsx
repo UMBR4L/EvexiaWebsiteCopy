@@ -5,7 +5,7 @@ import AndroidAppOnGooglePlay from "../../assets/buttons/AndroidAppOnGooglePlay.
 const AnytimeAnywhere: React.FC = () => {
   return (
     <div className="flex flex-col items-center w-full mb-56">
-      <h2 className="text-4xl font-bold text-center leading-huge text-[#000000] mb-14">
+      <h2 className="text-4xl font-bold text-center text-[#000000] mb-14">
         Anytime,
         <br />
         Anywhere

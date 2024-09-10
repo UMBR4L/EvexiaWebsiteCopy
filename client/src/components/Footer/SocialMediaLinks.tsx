@@ -6,7 +6,7 @@ import twitterLogo from "../../assets/logos/twitterLogo.png";
 const SocialMediaLinks: React.FC = () => {
   return (
     <div className="w-full flex justify-between space-x-4">
-      <a href="https://instagram.com">
+      {/* <a href="https://instagram.com">
         <img src={instagramLogo} alt="instagram logo" />
       </a>
       <a href="https://facebook.com">
@@ -14,7 +14,7 @@ const SocialMediaLinks: React.FC = () => {
       </a>
       <a href="https://x.com">
         <img src={twitterLogo} alt="twitter logo" />
-      </a>
+      </a> */}
     </div>
   );
 };

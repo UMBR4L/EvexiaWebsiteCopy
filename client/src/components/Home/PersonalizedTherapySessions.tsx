@@ -8,10 +8,10 @@ const PersonalizedTherapySessions: React.FC = () => {
   return (
     <div className="w-full flex flex-col mb-10xl items-center space-y-xl">
       <div className="w-full grid grid-cols-2 gap-base">
-        <img src={therapist1} alt="Therapist 1" className="w-auto"/>
-        <img src={therapist2} alt="Therapist 2" className="w-auto"/>
-        <img src={therapist3} alt="Therapist 3" className="w-auto"/>
-        <img src={therapist4} alt="Therapist 4" className="w-auto"/>
+        <img src={therapist1} alt="Therapist 1" className="w-full"/>
+        <img src={therapist2} alt="Therapist 2" className="w-full"/>
+        <img src={therapist3} alt="Therapist 3" className="w-full"/>
+        <img src={therapist4} alt="Therapist 4" className="w-full"/>
       </div>
       <div className="w-full">
         <h2 className="text-3xl font-bold leading-roomy mb-4 text-primaryColors-100">

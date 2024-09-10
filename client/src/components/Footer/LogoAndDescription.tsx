@@ -20,7 +20,7 @@ const LogoDescription: React.FC = () => {
         />
       </Link>
       <p className="text-base font-semibold mb-3">What does Evexia mean?</p>
-      <p className="text-lg font-medium">
+      <p className="text-lg font-medium leading-loose">
         Translates to "wellness" in Greek, embodying our core philosophy.
       </p>
     </div>

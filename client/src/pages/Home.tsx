@@ -20,9 +20,9 @@ import accessibleCareIcon from "../assets/icons/accessibleCareIcon.png";
 
 const Home: React.FC = () => {
   return (
-    <div className=" w-full font-inter text-neutralColors-100 bg-dimPrimary pt-6xl px-mobile-padding lg:px-desktop-padding">
+    <div className=" w-full font-inter ">
       {/* Main Grid System */}
-      <div className="w-full md:grid md:grid-cols-6 lg:grid-cols-12 md:gap-gutter  ">
+      <div className="w-full text-neutralColors-100 bg-dimPrimary pt-6xl px-mobile-padding lg:px-desktop-padding md:grid md:grid-cols-6 lg:grid-cols-12 md:gap-gutter  ">
         {/* Hero Section */}
         <div className="w-full md:col-span-full">
           <Hero />
@@ -109,11 +109,14 @@ const Home: React.FC = () => {
           <AnytimeAnywhere />
         </div>
 
+      </div>
+   
+
         {/* Footer Section */}
         <div className="w-full md:col-span-full">
           <Footer />
         </div>
-      </div>
+
 
       {/* OLD HOME PAGE */}
       {/* <div className="w-[100%] lg:max-w-[1500px] h-[600px] bg-primary my-5 rounded-[20px] md:mr-3 flex md:flex-row justify-center md:space-x-">
@@ -192,6 +195,7 @@ const Home: React.FC = () => {
             />
           </div>
         </div> */}
+
     </div>
   );
 };
