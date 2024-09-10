@@ -41,7 +41,7 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <nav className="max-w-full fixed z-10 bg-shadesColors-0">
+    <nav className="w-full fixed z-10 bg-shadesColors-0">
       {/* {isVisible && (
         <div
           className={`nav-overlay modal-overlay px-8 mt-[0px] ${
@@ -81,11 +81,11 @@ const NavBar: React.FC = () => {
       )} */}
 
       {/* Mobile Layout */}
-      <div className="top-0 grid grid-cols-4 gap-x-gutter mx-mobile-margin justify-between items-center h-12 md:hidden">
+      <div className="top-0 w-full flex justify-between items-center md:hidden px-mobile-padding py-mobile-padding">
         {/* Column 1: Hamburger Menu and Logo */}
-        <div className="col-span-1 flex justify-between">
+        <div className="w-auto flex space-x-lg">
           {/* Hamburger Menu for Mobile */}
-          <button className="focus:outline-none" onClick={toggleMenu}>
+          <button className="w-[2rem] focus:outline-none" onClick={toggleMenu}>
             {isOpen ? (
               <IoCloseOutline className="w-8 h-8 text-secondary" />
             ) : (
@@ -95,7 +95,7 @@ const NavBar: React.FC = () => {
 
           {/* Mobile Logo */}
           <Link to="/">
-            <img className="w-[2.125rem]" src={logoMobile} alt="Mobile Logo" />
+            <img className="w-[1.75rem]" src={logoMobile} alt="Mobile Logo" />
           </Link>
         </div>
 
@@ -112,19 +112,22 @@ const NavBar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <Link to="/appointment" onClick={() => setIsOpen(false)}>
-              <img
-                src={book_appointment}
-                alt="Book Appointment"
-                className="w-40"
-              />
-            </Link>
           </div>
         )}
+
+        <div className="w-[40%]">
+          <Link to="/appointment" onClick={() => setIsOpen(false)}>
+            <img
+              src={book_appointment}
+              alt="Book Appointment"
+              className="w-auto"
+            />
+          </Link>
+        </div>
       </div>
 
       {/* Desktop Layout */}
-      <div className="hidden md:flex grid-cols-12 gap-x-gutter mx-desktop-margin justify-between items-center h-16">
+      <div className="hidden md:flex grid-cols-12 gap-x-gutter px-desktop-padding justify-between items-center h-16">
         {/* Column 1: Desktop Logo */}
         <div className="col-span-2">
           <Link to="/">

@@ -20,22 +20,22 @@ import accessibleCareIcon from "../assets/icons/accessibleCareIcon.png";
 
 const Home: React.FC = () => {
   return (
-    <div className="font-inter text-neutralColors-100 max-w-full bg-dimPrimary pt-4">
+    <div className=" w-full font-inter text-neutralColors-100 bg-dimPrimary pt-6xl px-mobile-padding lg:px-desktop-padding">
       {/* Main Grid System */}
-      <div className="max-w-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-gutter mx-mobile-margin lg:mx-desktop-margin">
+      <div className="w-full md:grid md:grid-cols-6 lg:grid-cols-12 md:gap-gutter  ">
         {/* Hero Section */}
-        <div className="col-span-full">
+        <div className="w-full md:col-span-full">
           <Hero />
         </div>
 
         {/* Why Choose Evexia Section */}
-        <section className="col-span-full mb-32">
-          <h2 className="text-5xl font-bold text-left mb-8">
+        <section className="w-full md:col-span-full mb-20xl px-base">
+          <h2 className="text-3xl font-extraBold text-left mb-2xl">
             Why Choose Evexia?
           </h2>
 
           {/* Mobile Carousel */}
-          <div className="md:hidden flex overflow-x-scroll space-x-6">
+          <div className="md:hidden flex overflow-x-auto space-x-xl px-base">
             <Card
               icon={empowerYourMindIcon}
               title="Empower Your Mind"
@@ -85,32 +85,32 @@ const Home: React.FC = () => {
 
         {/* Other Sections */}
         {/* Personalized Therapy Sessions Section */}
-        <div className="col-span-full">
+        <div className="w-full md:col-span-full">
           <PersonalizedTherapySessions />
         </div>
 
         {/* Comprehensive Programs Section */}
-        <div className="col-span-full">
+        <div className="w-full md:col-span-full">
           <ComprehensivePrograms />
         </div>
 
         {/* Self-Guided Toolkits Section */}
-        <div className="col-span-full">
+        <div className="w-full md:col-span-full">
           <SelfGuidedToolkits />
         </div>
 
         {/* FAQ Section */}
-        <div className="col-span-full">
+        <div className="w-full md:col-span-full">
           <FAQ />
         </div>
 
         {/* Anytime, Anywhere Section */}
-        <div className="col-span-full">
+        <div className="w-full md:col-span-full">
           <AnytimeAnywhere />
         </div>
 
         {/* Footer Section */}
-        <div className="col-span-full">
+        <div className="w-full md:col-span-full">
           <Footer />
         </div>
       </div>

@@ -11,32 +11,32 @@ import { BrowserRouter } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
-    <div className="max-w-full mt-24 mb-48">
+    <div className="w-full mt-2xl mb-20xl">
       {/* Mobile Layout */}
-      <div className="md:hidden flex flex-col items-center text-left space-y-8">
+      <div className="md:hidden flex flex-col items-center space-y-xl">
         {/* Header */}
-        <h1 className="text-grey text-4xl leading-roomy tracking-wider font-bold">
+        <h1 className="text-grey text-3xl leading-roomy font-semiBold">
           Take care of all your{" "}
           <span className="text-mutedBlue">Mental Health</span> needs in one app
         </h1>
 
         {/* Image Section */}
-        <div className="image-section flex justify-center mb-8 md:justify-end">
+        <div className="image-section flex justify-center md:justify-end">
           <img
             src={appHomeScreen}
             alt="App Home Screen"
-            className="w-[50%] h-auto object-contain"
+            className="w-[75%] h-auto object-contain"
           />
         </div>
 
         {/* Description */}
-        <div className="font-medium text-2xl pl-6 mb-8 md:text-2xl leading-spacious">
+        <div className="font-medium text-lg px-lg md:text-2xl leading-comfy">
           Explore Evexia, where you begin a journey of self-care and support.
           Accessibility is everything, and we are here to enrich that.
         </div>
 
         {/* Download buttons */}
-        <div className="flex flex-col justify-center space-y-10">
+        <div className="flex flex-col justify-center space-y-xl">
           <a href="https://apps.apple.com">
             <img
               src={appleStore}
@@ -54,8 +54,8 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-     {/* Desktop Layout */}
-     <div className="hidden md:grid grid-cols-12 gap-gutter items-center">
+      {/* Desktop Layout */}
+      <div className="hidden md:grid grid-cols-12 gap-gutter items-center">
         {/* Left Side: Text Section */}
         <div className="col-span-6 flex flex-col justify-start mr-8">
           <h1 className="text-4xl lg:text-5xl font-semibold lg:font-bold text-grey leading-roomy lg:leading-huge mb-6">
