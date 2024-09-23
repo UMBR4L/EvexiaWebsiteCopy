@@ -4,6 +4,7 @@ export default {
   mode: "jit",
   theme: {
     extend: {
+
       transitionProperty: {
         "max-height": "max-height",
       },
@@ -90,24 +91,55 @@ export default {
         medium: 500,
         semiBold: 600,
         bold: 700,
+        extraBold: 900,
       },
       fontSize: {
-        base: "16px",
-        lg: "18px",
-        xl: "20px",
-        "2xl": "24px",
-        "3xl": "36px",
-        "4xl": "48px",
-        "5xl": "64px",
+        xs: '0.75rem',  // 12px
+        sm: '0.875rem', // 14px
+        base: "1rem",   // 16px
+        lg: "1.125rem", // 18px
+        xl: "1.25rem",  // 20px
+        "2xl": "1.5rem",// 24px
+        "3xl": "2.25rem",// 36px
+        "4xl": "3rem",  // 48px
+        "5xl": "4rem",  // 64px
       },
       lineHeight: {
-        snug: "20px",
-        relaxed: "24px",
-        loose: "28px",
-        comfy: "30px",
-        spacious: "40px",
-        roomy: "44px",
-        huge: "80px",
+        snug: "1.25rem",
+        relaxed: "1.5rem",
+        loose: "1.75rem",
+        comfy: "1.875rem",
+        spacious: "2.5rem",
+        roomy: "2.75rem",
+        huge: "5rem",
+      },
+      spacing: {
+        'base': "0.5rem", // 8px base spacing unit
+        'lg': "1rem", // 16px
+        'xl': "1.5rem", // 24px
+        "2xl": "2rem", // 32px
+        "3xl": "2.5rem", // 40px
+        "4xl": "3rem", // 48px
+        "5xl": "3.5rem", // 56px
+        "6xl": "4rem", // 64px
+        "7xl": "4.5rem", // 72px
+        "8xl": "5rem", // 80px
+        "9xl": "5.5rem", // 88px
+        "10xl": "6rem", // 96px
+        "11xl": "6.5rem", // 104px
+        "12xl": "7rem", // 112px
+        "13xl": "7.5rem", // 120px
+        "14xl": "8rem", // 128px
+        "15xl": "8.5rem", // 136px
+        "16xl": "9rem", // 144px
+        "17xl": "9.5rem", // 152px
+        "18xl": "10rem", // 160px
+        "19xl": "10.5rem", // 168px
+        "20xl": "11.5rem", // 184px
+
+        gutter: "1.25rem", // 20px gutter width
+        "mobile-padding": "16px", // padding for mobile 
+        "desktop-padding": "32px", // padding for desktop 
       },
       animation: {
         "fade-in": "fadeIn 300ms ease-out forwards",
@@ -123,19 +155,19 @@ export default {
       },
       keyframes: {
         fadeIn: {
-          "0%": { opacity: 0, transform: "translateY(-10px)" },
+          "0%": { opacity: 0, transform: "translateY(-0.625rem)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
         fadeOut: {
           "0%": { opacity: 1, transform: "translateY(0)" },
-          "100%": { opacity: 0, transform: "translateY(-10px)" },
+          "100%": { opacity: 0, transform: "translateY(-0.625rem)" },
         },
         "slide-down-2": {
           "0%": { maxHeight: "0", opacity: 0 },
-          "100%": { maxHeight: "100px", opacity: 1 },
+          "100%": { maxHeight: "6.25rem", opacity: 1 },
         },
         "slide-up-2": {
-          "0%": { maxHeight: "100px", opacity: 1 },
+          "0%": { maxHeight: "6.25rem", opacity: 1 },
           "100%": { maxHeight: "0", opacity: 0 },
         },
         "rotate-down": {
@@ -199,12 +231,9 @@ export default {
       },
     },
     screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1512px",
-      lg: "1700px",
-      xl: "1900px",
+      sm: "320px", // mobile breakpoint
+      md: "768px", // tablet breakpoint
+      lg: "1024px", // desktop breakpoint
     },
   },
   plugins: [require("@tailwindcss/forms")],

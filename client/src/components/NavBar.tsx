@@ -7,7 +7,8 @@ import { BsInfoCircle } from "react-icons/bs";
 import { LuMail } from "react-icons/lu";
 
 import styles from "../style";
-import logo from "../assets/logos/Sideways.png";
+import logoMobile from "../assets/logos/EvexiaLogo__Small.svg";
+import logoDesktop from "../assets/logos/EvexiaLogo__WithText.png";
 import logo_animated from "../assets/gifs/Loading-Once.gif";
 import book_appointment from "../assets/buttons/BookAppointment.png";
 
@@ -17,6 +18,10 @@ const NavBar: React.FC = () => {
   const [gifUrl, setGifUrl] = useState<string>(logo_animated);
   const location = useLocation();
   const currentPath = location.pathname;
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     if (isOpen) {
@@ -30,67 +35,13 @@ const NavBar: React.FC = () => {
     }
   }, [isOpen]);
 
-  const navLinks = (
-    <ul
-      className={`flex flex-col items-center space-y-4 md:flex-row md:space-x-10 md:space-y-0 leading-loose`}
-    >
-      {/* Separate Home Button
-      <li className={`${styles.pop_sm} hover:underline`}>
-        <div className="md:flex md:space-x-2">
-          <div className="hidden md:flex">
-            <GrHomeRounded className="w-6 h-6" />
-          </div>
-          <Link to="/" onClick={() => setIsOpen(false)}>
-            Home
-          </Link>
-        </div>
-      </li> */}
-
-      <li className={`${styles.pop_sm} hover:underline`}>
-        <div className="md:flex md:space-x-2">
-          {/* About Us icon */}
-          {/* <div className="hidden md:flex">
-            <BsInfoCircle className="w-6 h-6" />
-          </div> */}
-          <Link to="/about-us" onClick={() => setIsOpen(false)} className="text-xl font-inter font-regular leading-loose">
-            About Us
-          </Link>
-        </div>
-      </li>
-      {/* <li className={`${styles.pop_sm} hover:underline`}>
-        <Link to="/resources" onClick={() => setIsOpen(false)}>
-          Resources
-        </Link>
-      </li> */}
-
-      <li className={`${styles.pop_sm} hover:underline`}>
-        <div className="md:flex md:space-x-2">
-          {/* Contact Us icon */}
-          {/* <div className="hidden md:flex">
-            <LuMail className="w-7 h-7" />
-          </div> */}
-          <Link to="/contact-us" onClick={() => setIsOpen(false)} className="text-xl font-inter font-regular leading-loose">
-            Contact Us
-          </Link>
-        </div>
-      </li>
-
-      <li>
-        <div className="md:flex ml-5">
-          <Link to="/appointment">
-            <img
-              src={book_appointment}
-              alt="Book Appointment"
-              className="w-42 h-auto"
-            />
-          </Link>
-        </div>
-      </li>
-    </ul>
-  );
+  const navLinks = [
+    { name: "About Us", path: "/about-us" },
+    { name: "Contact Us", path: "/contact-us" },
+  ];
 
   return (
-    <div className="w-full fixed z-10 px-28 ">
+    <nav className="w-full fixed z-10 bg-shadesColors-0">
       {/* {isVisible && (
         <div
           className={`nav-overlay modal-overlay px-8 mt-[0px] ${
@@ -122,28 +73,94 @@ const NavBar: React.FC = () => {
               </button>
             </div>
 
-            <div className="bg-primary w-full h-[1px] "></div>
+            <div className="bg-primary max-w-full h-[1px] "></div>
 
             <div className="text-secondary text-2xl px-2 mt-5">{navLinks}</div>
           </div>
         </div>
       )} */}
-      <div
-        className={`top-0 backdrop-blur-xl py-7  flex justify-between items-center`}
-      >
-        <Link to="/">
-          <img
-            className={`w-[214px] ${styles.pop_sm}`}
-            src={logo}
-            alt="Logo"
-          />
-        </Link>
 
-        <div className="hidden md:flex justify-center items-center text-lg">
-          {navLinks}
+      {/* Mobile Layout */}
+      <div className="top-0 w-full flex justify-between items-center md:hidden px-mobile-padding py-mobile-padding">
+        {/* Column 1: Hamburger Menu and Logo */}
+        <div className="w-auto flex space-x-lg">
+          {/* Hamburger Menu for Mobile */}
+          <button className="w-[2rem] focus:outline-none" onClick={toggleMenu}>
+            {isOpen ? (
+              <IoCloseOutline className="w-8 h-8 text-secondary" />
+            ) : (
+              <RxHamburgerMenu className="w-8 h-8 text-secondary" />
+            )}
+          </button>
+
+          {/* Mobile Logo */}
+          <Link to="/">
+            <img className="w-[1.75rem]" src={logoMobile} alt="Mobile Logo" />
+          </Link>
         </div>
 
-        {/* LOGIN BUTTON /*}
+        {/* Mobile Menu (shows up when Hamburger Menu is clicked) */}
+        {isOpen && (
+          <div className="flex flex-col items-center space-y-6 mt-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.path}
+                onClick={() => setIsOpen(false)}
+                className="text-xl font-medium"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        )}
+
+        <div className="w-[40%]">
+          <Link to="/appointment" onClick={() => setIsOpen(false)}>
+            <img
+              src={book_appointment}
+              alt="Book Appointment"
+              className="w-auto"
+            />
+          </Link>
+        </div>
+      </div>
+
+      {/* Desktop Layout */}
+      <div className="hidden md:flex grid-cols-12 gap-x-gutter px-desktop-padding justify-between items-center h-16">
+        {/* Column 1: Desktop Logo */}
+        <div className="col-span-2">
+          <Link to="/">
+            <img className="w-32" src={logoDesktop} alt="Desktop Logo" />
+          </Link>
+        </div>
+
+        {/* Column 2: Desktop Menu */}
+        <div className="col-span-8 flex justify-center space-x-10 items-center">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className="text-lg font-medium hover:underline"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
+
+        {/* Column 3: Book Appointment Button */}
+        <div className="col-span-2">
+          <Link to="/appointment">
+            <img
+              src={book_appointment}
+              alt="Book Appointment"
+              className="w-40"
+            />
+          </Link>
+        </div>
+      </div>
+
+      {/* LOGIN BUTTON /*}
         {/* <div className="flex justify-center items-center">
           {currentPath !== "/app/login" && (
             <Link
@@ -166,8 +183,7 @@ const NavBar: React.FC = () => {
             </button>
           </div>
         </div> */}
-      </div>
-    </div>
+    </nav>
   );
 };
 

@@ -3,18 +3,20 @@ import SelfGuidedToolkitsScreen from "../../assets/screens/SelfGuidedToolkitsScr
 
 const SelfGuidedToolkits: React.FC = () => {
   return (
-    <div className="flex items-center mb-32">
-      <img src={SelfGuidedToolkitsScreen} alt="Self-Guided Toolkits Screen" />
-      <div className="ml-20 mr-36">
-        <h2 className="text-4xl font-bold mb-4 text-primaryColors-100">
-          Self-Guided Toolkits
-        </h2>
-        <p className="text-2xl text-neutralColors-100 font-body1 leading-roomy">
-          Access a wealth of resource packages filled with practical tools and
-          exercises. These packages are designed to empower you to take control
-          of your mental health journey.
-        </p>
-      </div>
+    <div className="w-full flex flex-col items-center space-y-xl mb-10xl">
+      <img
+        src={SelfGuidedToolkitsScreen}
+        alt="Self-Guided Toolkits Screen"
+        className="w-auto"
+      />
+      <h2 className="text-3xl font-bold leading-roomy text-primaryColors-100">
+        Self-Guided Toolkits
+      </h2>
+      <p className="text-xl text-neutralColors-100 leading-spacious">
+        Access a wealth of resource packages filled with practical tools and
+        exercises. These packages are designed to empower you to take control of
+        your mental health journey.
+      </p>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavigationLinks: React.FC = () => {
   return (
-    <div className="w-[116.4px] space-y-6">
+    <div className="max-w-full space-y-6">
       <h3 className="font-semiBold text-lg">Navigation</h3>
       <ul className="space-y-6">
         <li>
